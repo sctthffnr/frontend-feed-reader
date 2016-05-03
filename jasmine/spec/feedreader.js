@@ -99,7 +99,7 @@ $(function() {
           loadFeed(0, done);
         });
 
-       it('ensures the loadFeed function completes', function(done) {
+       it('are created when the loadFeed function completes', function(done) {
           $feed = $('.feed').find('.entry');
           expect($feed.length).toBeGreaterThan(0);
           done();
@@ -132,7 +132,7 @@ $(function() {
          });
        });
 
-       it('ensures a new feed is loaded', function(done) {
+       it('changes content when a new feed is loaded', function(done) {
          expect(firstFeed).not.toBe(secondFeed);
          done();
        });
